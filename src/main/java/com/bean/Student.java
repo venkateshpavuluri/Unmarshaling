@@ -10,6 +10,20 @@ package com.bean;
 public class Student {
 	private String name;
 	private String password;
+	private String userId;
+	
+	/**
+	 * @return the userId
+	 */
+	public String getUserId() {
+		return userId;
+	}
+	/**
+	 * @param userId the userId to set
+	 */
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
 	/**
 	 * @return the name
 	 */
