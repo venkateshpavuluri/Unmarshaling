@@ -1,23 +1,46 @@
 /**
  * 
  */
-package com.bean;
+package com.mnt.bean.students;
+
+import java.util.List;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+import com.sun.xml.txw2.annotation.XmlElement;
 
 /**
  * @author Nag
  *
  */
+@XmlRootElement
 public class Student {
 	private String name;
 	private String password;
 	private String userId;
 	private String passId;
+	private List<Employee> employees;
+	
 	
 	
 	
 	/**
+	 * @return the employees
+	 */
+	@XmlElement
+	public List<Employee> getEmployees() {
+		return employees;
+	}
+	/**
+	 * @param employees the employees to set
+	 */
+	public void setEmployees(List<Employee> employees) {
+		this.employees = employees;
+	}
+	/**
 	 * @return the passId
 	 */
+	@XmlElement
 	public String getPassId() {
 		return passId;
 	}
@@ -30,6 +53,7 @@ public class Student {
 	/**
 	 * @return the userId
 	 */
+	@XmlElement
 	public String getUserId() {
 		return userId;
 	}
@@ -42,6 +66,7 @@ public class Student {
 	/**
 	 * @return the name
 	 */
+	@XmlElement
 	public String getName() {
 		return name;
 	}
@@ -54,6 +79,7 @@ public class Student {
 	/**
 	 * @return the password
 	 */
+	@XmlElement
 	public String getPassword() {
 		return password;
 	}
