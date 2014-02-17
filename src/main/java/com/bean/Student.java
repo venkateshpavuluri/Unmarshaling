@@ -11,7 +11,22 @@ public class Student {
 	private String name;
 	private String password;
 	private String userId;
+	private String passId;
 	
+	
+	
+	/**
+	 * @return the passId
+	 */
+	public String getPassId() {
+		return passId;
+	}
+	/**
+	 * @param passId the passId to set
+	 */
+	public void setPassId(String passId) {
+		this.passId = passId;
+	}
 	/**
 	 * @return the userId
 	 */
