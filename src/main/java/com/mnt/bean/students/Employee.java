@@ -15,7 +15,7 @@ public class Employee {
 	/**
 	 * @return the empName
 	 */
-	@XmlElement
+	@javax.xml.bind.annotation.XmlElement(name="empName",namespace="http://mnt.com/bean/students")
 	public String getEmpName() {
 		return empName;
 	}
@@ -28,7 +28,7 @@ public class Employee {
 	/**
 	 * @return the empId
 	 */
-	@XmlElement
+	@javax.xml.bind.annotation.XmlElement(name="empId",namespace="http://mnt.com/bean/students")
 	public String getEmpId() {
 		return empId;
 	}

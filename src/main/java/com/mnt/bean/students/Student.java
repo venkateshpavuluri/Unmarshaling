@@ -13,30 +13,26 @@ import com.sun.xml.txw2.annotation.XmlElement;
  * @author Nag
  *
  */
-@XmlRootElement
+@XmlRootElement(name="student",namespace="http://mnt.com/bean/students")
 public class Student {
 	private String name;
 	private String password;
 	private String userId;
 	private String passId;
-	private List<Employee> employees;
-	/**
-	 * @return the employees
-	 */
-	@XmlElement
-	public List<Employee> getEmployees() {
-		return employees;
-	}
-	/**
-	 * @param employees the employees to set
-	 */
-	public void setEmployees(List<Employee> employees) {
-		this.employees = employees;
-	}
+	
+private List<Employee> employes;
+
+@javax.xml.bind.annotation.XmlElement(name="employes",namespace="http://mnt.com/bean/students")
+	public List<Employee> getEmployes() {
+	return employes;
+}
+public void setEmployes(List<Employee> employes) {
+	this.employes = employes;
+}
 	/**
 	 * @return the passId
 	 */
-	@XmlElement
+	@javax.xml.bind.annotation.XmlElement(name="passId",namespace="http://mnt.com/bean/students")
 	public String getPassId() {
 		return passId;
 	}
@@ -49,7 +45,7 @@ public class Student {
 	/**
 	 * @return the userId
 	 */
-	@XmlElement
+	@javax.xml.bind.annotation.XmlElement(name="userId",namespace="http://mnt.com/bean/students")
 	public String getUserId() {
 		return userId;
 	}
@@ -62,7 +58,7 @@ public class Student {
 	/**
 	 * @return the name
 	 */
-	@XmlElement
+	@javax.xml.bind.annotation.XmlElement(name="name",namespace="http://mnt.com/bean/students")
 	public String getName() {
 		return name;
 	}
@@ -75,7 +71,7 @@ public class Student {
 	/**
 	 * @return the password
 	 */
-	@XmlElement
+	@javax.xml.bind.annotation.XmlElement(name="password",namespace="http://mnt.com/bean/students")
 	public String getPassword() {
 		return password;
 	}
