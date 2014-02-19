@@ -20,10 +20,6 @@ public class Student {
 	private String userId;
 	private String passId;
 	private List<Employee> employees;
-	
-	
-	
-	
 	/**
 	 * @return the employees
 	 */
