@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:student xmlns:tns="http://mnt.com/bean/students" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://mnt.com/bean/students student.xsd ">
+  <tns:name>Nani</tns:name>
+  <tns:password>123456</tns:password>
+  <tns:userId>123</tns:userId>
+  <tns:passId>123</tns:passId>
+  <tns:employees>
+    <tns:empName>some</tns:empName>
+    <tns:empId>123</tns:empId>
+  </tns:employees>
+</tns:student>
